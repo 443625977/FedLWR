@@ -1,0 +1,11 @@
+# Python 缓存文件
+__pycache__/
+*.pyc
+
+# 数据集原始压缩包 (保留 py 下载逻辑)
+data/*.tar.gz
+data/*.zip
+
+# 已经解压的数据集文件夹 (让使用者通过代码自行下载)
+data/cifar-10-batches-py/
+data/cifar-100-python/

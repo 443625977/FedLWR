@@ -113,5 +113,3 @@ FedLWR/
 
 License
 MIT License
-
-text

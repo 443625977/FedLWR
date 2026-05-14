@@ -11,16 +11,23 @@
 ## 环境配置
 
 ```bash
+
 # 创建虚拟环境
+
 python -m venv fl_env
 
 # 激活虚拟环境（Windows）
+
 fl_env\Scripts\activate
+
 # 激活虚拟环境（macOS / Linux）
+
 source fl_env/bin/activate
 
 # 安装依赖
+
 pip install torch torchvision numpy matplotlib
+
 数据集准备
 本项目使用 CIFAR-10 和 CIFAR-100 数据集。
 
@@ -48,39 +55,62 @@ data/cifar-100-python/
 运行前请先激活虚拟环境：
 
 bash
+
 # Windows
+
 fl_env\Scripts\activate
+
 # macOS / Linux
+
 source fl_env/bin/activate
 FedAvg 基线
+
 bash
+
 python main.py
 FedProx 基线
+
 bash
+
 python main_prox.py
 FedLWR（本文方法）
+
 bash
+
 python main_lwr_v2.py        # CIFAR-10
 python main_lwr_cifar100.py  # CIFAR-100
 SCAFFOLD 基线
+
 bash
+
 python main_scaffold.py
 FedDyn 基线
+
 bash
+
 python main_feddyn.py
 消融实验
+
 bash
+
 python main_fixed.py    # 消融1：无自适应机制（固定λ）
 python main_global.py   # 消融2：无逐层机制（全局λ）
 CIFAR-100 实验
+
 bash
+
 python main_cifar100.py        # FedAvg 基线
 python main_lwr_cifar100.py    # FedLWR
 生成论文图表
+
 bash
+
 python plot.py
+
 项目结构
+
 text
+
 FedLWR/
 ├── data/
 │   └── data_loader.py          # 数据加载与Dirichlet非IID划分
@@ -109,6 +139,8 @@ FedLWR/
 ├── ablation_study.pdf          # 消融实验图
 └── README.md
 
-
 License
+
 MIT License
+
+text

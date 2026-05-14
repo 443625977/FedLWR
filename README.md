@@ -14,10 +14,9 @@
 # 创建虚拟环境
 python -m venv fl_env
 
-# 激活虚拟环境
-# Windows:
+# 激活虚拟环境（Windows）
 fl_env\Scripts\activate
-# macOS / Linux:
+# 激活虚拟环境（macOS / Linux）
 source fl_env/bin/activate
 
 # 安装依赖
@@ -49,9 +48,9 @@ data/cifar-100-python/
 运行前请先激活虚拟环境：
 
 bash
-# Windows:
+# Windows
 fl_env\Scripts\activate
-# macOS / Linux:
+# macOS / Linux
 source fl_env/bin/activate
 FedAvg 基线
 bash

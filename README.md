@@ -16,6 +16,7 @@ python -m venv fl_env
 
 # 激活虚拟环境（Windows）
 fl_env\Scripts\activate
+
 # 激活虚拟环境（macOS / Linux）
 source fl_env/bin/activate
 
@@ -50,6 +51,7 @@ data/cifar-100-python/
 bash
 # Windows
 fl_env\Scripts\activate
+
 # macOS / Linux
 source fl_env/bin/activate
 FedAvg 基线
